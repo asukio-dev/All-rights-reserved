@@ -1,0 +1,27 @@
+{
+  "updatedAt": "2026-02-15",
+  "entries": [
+    {
+      "serverName": "Nom du serveur 1",
+      "serverTag": "Demon Slayer RP",
+      "discordInvite": "https://discord.gg/xxxxxxx",
+      "serverLogo": "assets/placeholder.png",
+      "founderName": "PseudoFondateur",
+      "founderTag": "@PseudoFondateur",
+      "founderAvatar": "assets/placeholder.png",
+      "authorizedSince": "2026-01-10",
+      "notes": ["Achat vérifié", "Accord DM vérifié"]
+    },
+    {
+      "serverName": "Nom du serveur 2",
+      "serverTag": "Kimetsu Project",
+      "discordInvite": "https://discord.gg/yyyyyyy",
+      "serverLogo": "assets/placeholder.png",
+      "founderName": "AnotherFounder",
+      "founderTag": "@AnotherFounder",
+      "founderAvatar": "assets/placeholder.png",
+      "authorizedSince": "2026-02-01",
+      "notes": ["Autorisation ticket", "Logo fourni"]
+    }
+  ]
+}
