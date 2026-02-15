@@ -1,10 +1,102 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Yufu — Rights</title>
+  <meta charset="UTF-8" />
+  <title>YUFU — Rights Registry</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    html,body{
+      margin:0;
+      width:100%;
+      height:100%;
+      background:#070a12;
+      color:#fff;
+      font-family:Inter,Arial,sans-serif;
+      overflow:hidden;
+    }
+
+    canvas{
+      position:fixed;
+      inset:0;
+      z-index:-1;
+    }
+
+    .center{
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      text-align:center;
+      animation:fadeIn 1.2s ease forwards;
+    }
+
+    h1{
+      font-size:clamp(28px,4vw,56px);
+      letter-spacing:0.15em;
+      margin:0;
+    }
+
+    .sub{
+      margin-top:14px;
+      font-size:14px;
+      opacity:.7;
+    }
+
+    .glow{
+      text-shadow:
+        0 0 12px rgba(140,120,255,.6),
+        0 0 32px rgba(80,180,255,.35);
+    }
+
+    @keyframes fadeIn{
+      from{opacity:0;transform:translate(-50%,-45%)}
+      to{opacity:1;transform:translate(-50%,-50%)}
+    }
+  </style>
 </head>
-<body style="background:#0b0f18;color:white;font-family:Arial;display:flex;align-items:center;justify-content:center;height:100vh">
-  <h1>YUFU — All Rights Reserved</h1>
+<body>
+
+<canvas id="bg"></canvas>
+
+<div class="center">
+  <h1 class="glow">YUFU</h1>
+  <div class="sub">AUTHORIZED CONTENT REGISTRY</div>
+</div>
+
+<script>
+  const c = document.getElementById("bg");
+  const ctx = c.getContext("2d");
+  let w,h;
+
+  function resize(){
+    w = c.width = window.innerWidth;
+    h = c.height = window.innerHeight;
+  }
+  window.addEventListener("resize", resize);
+  resize();
+
+  const dots = Array.from({length:120},()=>({
+    x:Math.random()*w,
+    y:Math.random()*h,
+    r:Math.random()*1.4+0.4,
+    s:Math.random()*0.3+0.1
+  }));
+
+  function draw(){
+    ctx.clearRect(0,0,w,h);
+    ctx.fillStyle="rgba(200,220,255,.8)";
+    dots.forEach(d=>{
+      ctx.beginPath();
+      ctx.arc(d.x,d.y,d.r,0,Math.PI*2);
+      ctx.fill();
+      d.y+=d.s;
+      if(d.y>h){d.y=0;d.x=Math.random()*w;}
+    });
+    requestAnimationFrame(draw);
+  }
+  draw();
+</script>
+
 </body>
 </html>
