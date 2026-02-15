@@ -1,6 +1,6 @@
 const $ = (s) => document.querySelector(s);
 
-const DISCORD_CONTACT_URL = "https://discord.gg/TON_INVITE_YUFU"; // <-- remplace ici
+const DISCORD_CONTACT_URL = "https://discord.gg/R4PkmNkUFx"; // <-- remplace ici
 
 const state = {
   all: [],
