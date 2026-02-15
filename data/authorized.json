@@ -2,23 +2,23 @@
   "updatedAt": "2026-02-15",
   "entries": [
     {
-      "serverName": "Nom du serveur 1",
+      "serverName": "FK",
       "serverTag": "Demon Slayer RP",
-      "discordInvite": "https://discord.gg/xxxxxxx",
+      "discordInvite": "https://discord.gg/ncE3BvsNzV",
       "serverLogo": "assets/placeholder.png",
-      "founderName": "PseudoFondateur",
-      "founderTag": "@PseudoFondateur",
+      "founderName": "Kuzen",
+      "founderTag": "@fkuzen",
       "founderAvatar": "assets/placeholder.png",
       "authorizedSince": "2026-01-10",
       "notes": ["Achat vérifié", "Accord DM vérifié"]
     },
     {
-      "serverName": "Nom du serveur 2",
-      "serverTag": "Kimetsu Project",
-      "discordInvite": "https://discord.gg/yyyyyyy",
+      "serverName": "SL",
+      "serverTag": "Demon Slayer RP",
+      "discordInvite": "https://discord.gg/REjx2ZHTqP",
       "serverLogo": "assets/placeholder.png",
-      "founderName": "AnotherFounder",
-      "founderTag": "@AnotherFounder",
+      "founderName": "Wolf",
+      "founderTag": "@wolf178452",
       "founderAvatar": "assets/placeholder.png",
       "authorizedSince": "2026-02-01",
       "notes": ["Autorisation ticket", "Logo fourni"]
